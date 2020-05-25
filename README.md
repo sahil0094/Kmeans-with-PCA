@@ -25,6 +25,6 @@ Name / Data Type / Measurement Unit / Description
 <li>Rings / integer / -- / +1.5 gives the age in years
 </ul>
 
-# Approach- 
+# Approach
 We first applied Kmeans directly on dataset. We found 3 as the optimal number of clusters and got the inertia to be 9922.820.
 Then we applied PCA as there was high multicollinearity and again applied KMeans using single PC and got the inertia to be 4786.761413.
