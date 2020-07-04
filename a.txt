@@ -1,0 +1,7 @@
+End of file reached
+This line is being appended to test.txt
+And another line here.
+This line is being appended to test.txt
+And another line here.
+This line is being appended to test.txt
+And another line here.
