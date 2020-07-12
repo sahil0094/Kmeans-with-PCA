@@ -1,7 +1,19 @@
-End of file reached
-This line is being appended to test.txt
-And another line here.
-This line is being appended to test.txt
-And another line here.
-This line is being appended to test.txt
-And another line here.
+Supervised Learning
+
+count plot
+sns.set(style="darkgrid")
+sns.set_palette("hls", 3)
+fig, ax = plt.subplots(figsize=(20,5))
+ax = sns.countplot(x="Contract", hue="Churn", data=churn_df)
+
+for p in ax.patches:
+    #print(p)
+    height = p.get_height()
+    ax.text(p.get_x()+p.get_width()/2.,
+            height + 3,
+            '{:1.2f}'.format(height/churn_df.shape[0]),
+            ha="center")
+
+Cramers V
+chi2_contingency([ct.iloc[0].values,ct.iloc[1].values,ct.iloc[2].values])
+np.sqrt(1184.5965/churn_df.shape[0])
